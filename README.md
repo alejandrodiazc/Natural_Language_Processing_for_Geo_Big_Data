@@ -1,1 +1,3 @@
 # Natural_Language_Processing_for_Geo_Big_Data
+
+El Instituto nacional de Estadistica, Geografia e Informatica (INEGI), cuenta con informacion de toda la poblacion del pais y sus negocios. Esta informacion se obtiene mediante censos cada decada, sin embargo, el publico general no tiene una manera simple de consultarla. para solucionar este problema se creara un chatbot que permita obtener informacion de las bases de datos mediante preguntas sencillas. Para lograr esto, es necesario utilizar diferentes herramientas e integrarlas, siendo la principal el procesamiento natural de lenguaje (NLP)...Continuara.
