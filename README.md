@@ -1,6 +1,6 @@
 # Negocios en Nuevo Leon (Natural_Language_Processing_for_Geo_Big_Data)
 
-<p align="right">
+<p align="center">
   <a href="https://www.inegi.org.mx"><img src="https://user-images.githubusercontent.com/67669430/203458100-1e10d159-3f62-4016-8829-4b9176e3daac.png" width="15%" height="15%">
 </p>
 
@@ -10,7 +10,7 @@ El Instituto nacional de Estadistica, Geografia e Informatica (INEGI), cuenta co
 
 ## Chatbot
 
-<p align="right">
+<p align="center">
   <a href="https://www.neuraan.com"><img src="https://user-images.githubusercontent.com/67669430/203458027-17464d5d-4383-4852-8ea3-184859899117.png" width="15%" height="15%">
 </p>
 
