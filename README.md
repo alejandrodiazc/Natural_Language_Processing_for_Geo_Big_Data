@@ -26,3 +26,7 @@ Cuando el usuario le proporciona la informacion necesaria al chatbot, comienza l
 
 ### Video Final
 https://www.youtube.com/watch?v=8UDUP5LJ2fQ
+  
+## Página de Wix
+  
+https://delvallegerardo7.wixsite.com/my-site
