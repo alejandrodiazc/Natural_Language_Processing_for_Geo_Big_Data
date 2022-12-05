@@ -23,3 +23,6 @@ Neuraan es una compañia apasionada por mejorar el entendimiento de las maquinas
 ## Busqueda de Negocios
 
 Cuando el usuario le proporciona la informacion necesaria al chatbot, comienza la busqueda de caracteristicas de negocios similares y la prediccion. Utilizando Pyspark, se extrae la informacion del INEGI y se separan las variables seleccionadas. Utilizando queries en SQL se van obteniendo las caracteristicas de la zona seleccionada y se comparan con las de negocios con el mismo giro en la ubicacion. Finalmente, utilizando machine learning, se realiza una prediccion acerca de si es viable o no poner el negocio.
+
+### Video Final
+https://www.youtube.com/watch?v=8UDUP5LJ2fQ
