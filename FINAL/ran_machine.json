@@ -1,0 +1,317 @@
+{
+  "version": "1.0.0",
+  "stateMachine": {
+    "name": "Máquina de estados del bot",
+    "description": "Máquina de estados del bot",
+    "state": [
+      {
+        "description": "FAQ",
+        "id": 3654,
+        "name": "FAQ",
+        "state_machine_behaviour": [
+          {
+            "id": 11254,
+            "name": "Default behaviour",
+            "state_machine_condition": [],
+            "state_machine_transition": [],
+            "state_machine_action": [
+              {
+                "state_machine_action_type": {
+                  "type": "ACTION_SAY"
+                },
+                "description": "El bot responder con las respuestas de los temas de conversación de la base de conocimiento.",
+                "id": 11681,
+                "name": "Action Say",
+                "options": {
+                  "hermes": true
+                }
+              }
+            ],
+            "state_machine_general_options": [],
+            "state_machine_parameter": []
+          },
+          {
+            "id": 11251,
+            "name": "behavior",
+            "state_machine_action": [
+              {
+                "state_machine_action_type": {
+                  "type": "ACTION_SAY"
+                },
+                "description": "Acción a realizar si la condición es cumplida.",
+                "id": 11682,
+                "name": "Pedir negocio",
+                "options": {
+                  "hermes": true,
+                  "text": "¿Qué neogico deseas consultar?"
+                }
+              }
+            ],
+            "state_machine_condition": [
+              {
+                "state_machine_condition_type": {
+                  "type": "INTENT"
+                },
+                "run_action": [],
+                "id": 8419,
+                "name": "Saludo",
+                "description": "Saludo",
+                "options": {
+                  "intent": [],
+                  "threshold": 0.7,
+                  "intent_name": [
+                    "Saludo"
+                  ]
+                }
+              }
+            ],
+            "state_machine_transition": [
+              {
+                "id": 0,
+                "name": "state",
+                "description": "Del comportamiento behavior al comportamiento state",
+                "id_next_state": 3656
+              }
+            ],
+            "state_machine_general_options": [],
+            "state_machine_parameter": []
+          }
+        ],
+        "state_machine_default_behaviour": [
+          {
+            "id_state_machine_behaviour": 11254
+          }
+        ]
+      },
+      {
+        "description": "",
+        "id": 3656,
+        "name": "state",
+        "state_machine_behaviour": [
+          {
+            "id": 11255,
+            "name": "Default behaviour",
+            "state_machine_condition": [],
+            "state_machine_transition": [],
+            "state_machine_action": [],
+            "state_machine_general_options": [],
+            "state_machine_parameter": []
+          },
+          {
+            "id": 11252,
+            "name": "behavior",
+            "state_machine_action": [
+              {
+                "state_machine_action_type": {
+                  "type": "ACTION_SAY"
+                },
+                "description": "Acción a realizar si la condición es cumplida.",
+                "id": 11683,
+                "name": "Acción a ejecutar",
+                "options": {
+                  "hermes": false,
+                  "text": "Detecté que quieres consultar ${params.negocios_response}. ¿Cuál es el código postal que quieres consultar?"
+                }
+              }
+            ],
+            "state_machine_condition": [
+              {
+                "state_machine_condition_type": {
+                  "type": "API_CONDITION"
+                },
+                "run_action": [],
+                "id": 8420,
+                "name": "Validar datos desde una API",
+                "description": "Validar datos desde una API",
+                "options": {
+                  "url": "https://3755-2806-10b7-3-9a3d-8dda-9404-6978-7a36.ngrok.io/get-business",
+                  "method": "POST",
+                  "body": [
+                    {
+                      "key": "__neuraan_core_response__",
+                      "value": "."
+                    }
+                  ],
+                  "header": [],
+                  "expected_response": true,
+                  "source": [
+                    {
+                      "key": "response",
+                      "as": "negocios_response",
+                      "sensitive": false
+                    }
+                  ],
+                  "advancedEditor": false,
+                  "timeout": 0,
+                  "addQuestion": true,
+                  "result_path": "success"
+                }
+              }
+            ],
+            "state_machine_transition": [
+              {
+                "id": 1,
+                "name": "state",
+                "description": "Del comportamiento behavior al comportamiento state",
+                "id_next_state": 3658
+              }
+            ],
+            "state_machine_general_options": [],
+            "state_machine_parameter": []
+          }
+        ],
+        "state_machine_default_behaviour": [
+          {
+            "id_state_machine_behaviour": 11255
+          }
+        ]
+      },
+      {
+        "description": "",
+        "id": 3658,
+        "name": "state",
+        "state_machine_behaviour": [
+          {
+            "id": 11256,
+            "name": "Default behaviour",
+            "state_machine_condition": [],
+            "state_machine_transition": [],
+            "state_machine_action": [],
+            "state_machine_general_options": [],
+            "state_machine_parameter": []
+          },
+          {
+            "id": 11253,
+            "name": "behavior",
+            "state_machine_action": [
+              {
+                "state_machine_action_type": {
+                  "type": "ACTION_SAY"
+                },
+                "description": "Acción a realizar si la condición es cumplida.",
+                "id": 11685,
+                "name": "Acción a ejecutar",
+                "options": {
+                  "hermes": false,
+                  "text": "Respuesta ${params.response}"
+                }
+              }
+            ],
+            "state_machine_condition": [
+              {
+                "state_machine_condition_type": {
+                  "type": "API_CONDITION"
+                },
+                "run_action": [],
+                "id": 8421,
+                "name": "Get postal code",
+                "description": "Get postal code",
+                "options": {
+                  "url": "https://3755-2806-10b7-3-9a3d-8dda-9404-6978-7a36.ngrok.io/get-postal-code",
+                  "method": "POST",
+                  "body": [
+                    {
+                      "key": "__neuraan_core_response__",
+                      "value": "."
+                    },
+                    {
+                      "key": "negocio",
+                      "value": "${params.negocios_response}"
+                    }
+                  ],
+                  "header": [],
+                  "expected_response": true,
+                  "source": [
+                    {
+                      "key": "response",
+                      "as": "response",
+                      "sensitive": false
+                    },
+                    {
+                      "key": "",
+                      "as": "",
+                      "sensitive": false
+                    }
+                  ],
+                  "advancedEditor": false,
+                  "timeout": 0,
+                  "addQuestion": true,
+                  "result_path": "success"
+                }
+              }
+            ],
+            "state_machine_transition": [
+              {
+                "id": 2,
+                "name": "FAQ",
+                "description": "Del comportamiento behavior al comportamiento FAQ",
+                "id_next_state": 3654
+              }
+            ],
+            "state_machine_general_options": [],
+            "state_machine_parameter": []
+          }
+        ],
+        "state_machine_default_behaviour": [
+          {
+            "id_state_machine_behaviour": 11256
+          }
+        ]
+      }
+    ],
+    "state_machine_behaviour": [
+      {
+        "id": 11250,
+        "name": "Reiniciar la maquina",
+        "state_machine_action": [
+          {
+            "state_machine_action_type": {
+              "type": "ACTION_SAY"
+            },
+            "description": "Acción a realizar si la condición es cumplida.",
+            "id": 11686,
+            "name": "Acción a ejecutar",
+            "options": {
+              "hermes": true,
+              "text": ""
+            }
+          }
+        ],
+        "state_machine_condition": [
+          {
+            "state_machine_condition_type": {
+              "type": "INTENT"
+            },
+            "run_action": [],
+            "id": 8422,
+            "name": "Restart machine",
+            "description": "Restart machine",
+            "options": {
+              "intent": [],
+              "threshold": 0.7,
+              "intent_name": [
+                "Despedida"
+              ]
+            }
+          }
+        ],
+        "state_machine_transition": [
+          {
+            "id": 3,
+            "name": "FAQ",
+            "description": "Del comportamiento Reiniciar la maquina al comportamiento FAQ",
+            "id_next_state": 3654
+          }
+        ],
+        "state_machine_general_options": [
+          {
+            "id": 0,
+            "options": "{\"meg\":{\"inputType\":{\"type\":\"text\"},\"restartMachine\":true}}"
+          }
+        ],
+        "state_machine_parameter": []
+      }
+    ],
+    "state_machine_initial_state": []
+  }
+}

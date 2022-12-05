@@ -1,0 +1,1631 @@
+{
+      "intents": {
+        "Saludo": {
+          "examples": [
+            "¡Hola!",
+            "¿Cómo estas?",
+            "¿Cómo te va?",
+            "¿Qué onda?",
+            "Buenos días",
+            "Que tal"
+          ],
+          "answers": [
+            "¡Hola!, ¿Cuáles son tus dudas?",
+            "¡Hola!, ¿Qué deseas saber?",
+            "¡Hola!, ¿Tienes alguna duda?",
+            "¡Hola!, ¿En qué te puedo servir?",
+            "¡Hola!, ¿En qué puedo ayudarte?",
+            "¡Hola!, ¿Qué dudas tienes?",
+            "¡Hola!, ¿tienes alguna pregunta?"
+          ],
+          "entities": {}
+        },
+        "Despedida": {
+          "examples": [
+            "¡Que tengas un buen día!",
+            "Chao",
+            "Bye!",
+            "Hasta pronto",
+            "Me despido",
+            "Nos vemos",
+            "Adiós",
+            "Hasta luego"
+          ],
+          "answers": [
+            "¡Hasta Luego!",
+            "Adiós",
+            "Bye!",
+            "Espero verte muy pronto",
+            "Ha sido un gusto atenderte",
+            "Hasta luego",
+            "Hasta pronto",
+            "Me encantará platicar contigo de nuevo",
+            "Me ha encantado platicar contigo"
+          ],
+          "entities": {}
+        },
+        "Si": {
+          "examples": [
+            "Sí",
+            "Correcto",
+            "Afirmativo",
+            "Afirma",
+            "Sip",
+            "También",
+            "si así es",
+            "ok"
+          ],
+          "answers": [
+            "Ok, sí"
+          ],
+          "entities": {}
+        },
+        "No": {
+          "examples": [
+            "No",
+            "Nel",
+            "Ni al caso",
+            "Nada que ver",
+            "Nop",
+            "Tampoco"
+          ],
+          "answers": [
+            "Está bien, no",
+            "Ok, no"
+          ],
+          "entities": {}
+        },
+        "Sin Sentido": {
+          "examples": [
+            "y",
+            "y la",
+            "de la",
+            "en el",
+            "las",
+            "es un",
+            "y para un",
+            "y de un"
+          ],
+          "answers": [
+            "Por el momento no cuento con información relacionada, te recuero que también puedes solicitar notificarlo con el responsable del tema si no obtienes respuesta alguna con el activo que me has proporcionado.",
+            "En este momento no puedo contestarte, pues no tengo información sobre lo que me preguntas, te recuero que también puedes solicitar notificarlo con el responsable del tema si no obtienes respuesta alguna con el activo que me has proporcionado."
+          ],
+          "entities": {}
+        },
+        "Información": {
+          "examples": [
+            "como funcionas",
+            "ayuda",
+            "que haces"
+          ],
+          "answers": [
+            "Puedo ayudarte proporcionando información del negocio, ¿Que te gustaría consultar?"
+          ],
+          "entities": {}
+        },
+        "Agradecimiento": {
+          "examples": [
+            "muchas gracias",
+            "que amable",
+            "gracias",
+            "Muchísimas gracias"
+          ],
+          "answers": [
+            "Un placer atenderte."
+          ],
+          "entities": {}
+        }
+      },
+      "entities": {
+        "64000": [
+          "64000",
+          "Monterrey Centro",
+          "La Finca"
+        ],
+        "64010": [
+          "64010",
+          "Obrera"
+        ],
+        "64018": [
+          "64018",
+          "Nuevo Centro de Monterrey",
+          "Desarrollo Urbano Reforma"
+        ],
+        "64019": [
+          "64019",
+          "Condominios Constitución"
+        ],
+        "64020": [
+          "64020",
+          "Gonzalitos",
+          "Mitras Sur"
+        ],
+        "64030": [
+          "64030",
+          "Chepevera",
+          "Lomas"
+        ],
+        "64040": [
+          "64040",
+          "María Luisa",
+          "Deportivo Obispado",
+          "Unidad Aldama"
+        ],
+        "64049": [
+          "64049",
+          "Exseminario"
+        ],
+        "64050": [
+          "64050",
+          "Jardines del Cerro",
+          "Jardín"
+        ],
+        "64060": [
+          "64060",
+          "Obispado"
+        ],
+        "64070": [
+          "64070",
+          "Mirador"
+        ],
+        "64100": [
+          "64100",
+          "San Bernabé"
+        ],
+        "64102": [
+          "64102",
+          "Jardines del Rey",
+          "Arcos del Sol",
+          "Arcos del Sol Elite",
+          "Barrio Topo Chico",
+          "Barrio Santa Isabel",
+          "Barrio la Moderna",
+          "Barrio San Luis",
+          "Barrio San Carlos",
+          "Barrio Puerta del Sol",
+          "Barrio del Parque",
+          "Barrio Estrella",
+          "Barrio Acero",
+          "Barrio Alameda",
+          "Barrio Antiguo Ciudad Solidaridad",
+          "Barrio Aztlán",
+          "Barrio Chapultepec",
+          "Barrio de la Industria",
+          "Barrio de Margaritas",
+          "Barrio San Pedro",
+          "Urbi Villa del Rey",
+          "Barrio del Prado",
+          "Las Estaciones",
+          "Urbi Villa del Cedro Segundo Sector",
+          "Reserva Cumbres",
+          "Mirasol Sector 3 (San Felipe)",
+          "Urbi Villa del Cedro Primer Sector",
+          "Las Plazas",
+          "Mirasol",
+          "Urbi Villa Bonita",
+          "Villas de San Bernabé",
+          "Privadas de Lincoln"
+        ],
+        "64103": [
+          "64103",
+          "San Gabriel",
+          "Unión Antorchista",
+          "San Isidro (P-108)",
+          "San Juan de Guadalupe",
+          "San Pedro (P-72, 76, 736)",
+          "Santa Ana (P-63)",
+          "San Rodolfo Uno (P-89, 139)",
+          "Diego de Montemayor",
+          "Cuauhtémoc",
+          "Cerradas del Poniente",
+          "Comercial Lincoln Poniente",
+          "El Palmar (P-96, 141)",
+          "San David I (P-33)",
+          "La Alianza Sector F (P-142)",
+          "La Alianza Sector H (P-140,192)",
+          "Valle de la Esperanza",
+          "Ignacio Manuel Altamirano",
+          "Ingeniero José María Maldonado Tijerina",
+          "San Antonio (P-37)",
+          "Jardines de la Alianza",
+          "Urbi Villa Colonial",
+          "La Alianza Sector I (P-58,68)",
+          "Jerónimo Treviño (P-35)",
+          "José María Morelos",
+          "La Alianza P-128",
+          "La Alianza Sector B",
+          "La Alianza Sector C",
+          "La Alianza Sector D (P-94)",
+          "La Alianza Sector E (P-47,48)",
+          "San Bernabé Topo Chico",
+          "Homero López Ortiz",
+          "La Alianza Sector J (P-79,137,87)",
+          "La Alianza Sector L (P-107)",
+          "Real de San Bernabé",
+          "Las Torres",
+          "Villas de la Alianza",
+          "Profesor Miguel Ramos Arizpe",
+          "Alfonso Reyes (P-38)",
+          "Villas de San Agustín",
+          "Lorenzo Garza (P-1)",
+          "Los Ángeles (P-49, 50, 133)",
+          "Los Naranjos",
+          "Los Nogales I y II (P-98, 109)",
+          "Los Nogales III (P-102)",
+          "La Alianza Sector K (P-43,51)",
+          "Prados San Bernabé",
+          "Portal del Valle",
+          "Madero",
+          "María Leija Briones",
+          "Martín de Zavala (P-34)",
+          "Periodistas de México Primera Etapa",
+          "2 de Octubre",
+          "Periodistas",
+          "Misión San Bernabé",
+          "Villas de San Sebastián",
+          "Paseo de San Bernabé",
+          "Villas del Carmen",
+          "Portales de San Bernabé",
+          "La Realidad",
+          "Las Fuentes (P-53, 54, 134)",
+          "La Alianza Trazo Mao (P- 46)",
+          "La Alianza Sector M (P-61)",
+          "Balcones de San Bernabé",
+          "La Alianza Sector N (P-71,74)",
+          "La Alianza Sector O (P-67)",
+          "La Alianza Sector P (P-88)",
+          "La Alianza Sector Q (P-90)",
+          "La Alianza Sector R (P-8-9)",
+          "La Alianza Sector S (P-28)",
+          "La Alianza Sector T (P-24)",
+          "Valles de San Bernabé I",
+          "La Alianza Sector V (P-68)",
+          "La Alianza Trazo Barrón (P- 93)",
+          "La Alianza Trazo de A (P-28)",
+          "Valles de San Bernabé III",
+          "Rincón de San Bernabé",
+          "Colonial San Bernabé",
+          "Arboledas de Escobedo (P-44)",
+          "La Alianza Trazo Marcelino (P-130)",
+          "La Alianza Trazo Marco (P- 52)",
+          "Venustiano Carranza Sector la Alianza",
+          "Vicente Suárez",
+          "Aniceto Corpus",
+          "La Alianza Trazo Rosario (P- 90)",
+          "Riveras del Río",
+          "Ampliación Nogales (P-87)",
+          "Arboledas de San Bernabe"
+        ],
+        "64104": [
+          "64104",
+          "San Bernabé IV (F-124)",
+          "San Bernabé II (F-120)",
+          "San Bernabé III"
+        ],
+        "64105": [
+          "64105",
+          "San Bernabé XII (F-115)",
+          "San Bernabé X (F-113)",
+          "San Bernabé IX (F-112)",
+          "San Bernabé XI (F-114)"
+        ],
+        "64106": [
+          "64106",
+          "San Bernabé XIV (F-109)",
+          "San Bernabé XV (F-119)",
+          "San Bernabé XIII (F-116)"
+        ],
+        "64107": [
+          "64107",
+          "Colina de San Bernabé (F-25)"
+        ],
+        "64108": [
+          "64108",
+          "Plutarco Elías Calles"
+        ],
+        "64109": [
+          "64109",
+          "San Bernabé (F-105)",
+          "San Bernabé (F-51)",
+          "3 de Febrero"
+        ],
+        "64110": [
+          "64110",
+          "Madre Selva",
+          "Misión Lincoln"
+        ],
+        "64116": [
+          "64116",
+          "Cumbre Alta",
+          "Villa Cumbres",
+          "Lomas de Cumbres"
+        ],
+        "64117": [
+          "64117",
+          "Valle Verde Segundo Sector",
+          "Torres Monarcas",
+          "Balcones de las Mitras",
+          "Colinas de Valle Verde"
+        ],
+        "64118": [
+          "64118",
+          "Paseo de las Mitras"
+        ],
+        "64119": [
+          "64119",
+          "Fidel Velázquez (SNAT)"
+        ],
+        "64120": [
+          "64120",
+          "Loma Linda"
+        ],
+        "64130": [
+          "64130",
+          "Villa Alegre",
+          "Lomas de Villa Alegre"
+        ],
+        "64140": [
+          "64140",
+          "Valle de Santa Lucía (Granja Sanitaria)",
+          "Lomas Modelo",
+          "Unidad Modelo"
+        ],
+        "64145": [
+          "64145",
+          "Paso del Águila"
+        ],
+        "64148": [
+          "64148",
+          "Genaro Rojas Vázquez"
+        ],
+        "64150": [
+          "64150",
+          "Santa Cecilia",
+          "Villa Santa Cecilia",
+          "Álvaro Obregón"
+        ],
+        "64157": [
+          "64157",
+          "Valle Santa Cecilia",
+          "Rincón Santa Cecilia"
+        ],
+        "64158": [
+          "64158",
+          "Lomas de Santa Cecilia"
+        ],
+        "64159": [
+          "64159",
+          "Mitra Dorada",
+          "Cerritos Modelo (F-76)",
+          "Lomas Modelo Norte"
+        ],
+        "64160": [
+          "64160",
+          "Esperanza o Peña Elizondo",
+          "Jardín Modelo",
+          "15 de Marzo",
+          "Nueva Modelo (F-8)",
+          "Nueva Galicia",
+          "16 de Septiembre",
+          "Santa Cruz (F- 10)"
+        ],
+        "64165": [
+          "64165",
+          "Residencial Raúl Rangel Frías",
+          "Unión de Fierreros"
+        ],
+        "64167": [
+          "64167",
+          "Lomas de La Unidad Modelo"
+        ],
+        "64168": [
+          "64168",
+          "Abelardo Zapata"
+        ],
+        "64170": [
+          "64170",
+          "Condocasa Mitras",
+          "Felipe Ángeles",
+          "Villa Mitras",
+          "San Francisco de Asís"
+        ],
+        "64178": [
+          "64178",
+          "Bortoní"
+        ],
+        "64180": [
+          "64180",
+          "Privada Cumbres",
+          "Morelos",
+          "Torres Pravia",
+          "Del Maestro",
+          "Valle Morelos",
+          "Nueva Morelos"
+        ],
+        "64186": [
+          "64186",
+          "5 de Mayo"
+        ],
+        "64190": [
+          "64190",
+          "Central"
+        ],
+        "64200": [
+          "64200",
+          "CROC"
+        ],
+        "64204": [
+          "64204",
+          "Valle de San Martín (F-24)"
+        ],
+        "64205": [
+          "64205",
+          "Lomas de Topo Chico"
+        ],
+        "64206": [
+          "64206",
+          "El Porvenir",
+          "Laderas del Topo Chico (F-23)"
+        ],
+        "64209": [
+          "64209",
+          "Conquistadores",
+          "Tierra Propia (F-35)"
+        ],
+        "64210": [
+          "64210",
+          "Fomerrey",
+          "San Martín",
+          "7 de Noviembre (F-82)",
+          "Articulo 27 (F-96)",
+          "DIF (F-15)"
+        ],
+        "64215": [
+          "64215",
+          "23 de Marzo",
+          "Libertadores de América",
+          "René Álvarez",
+          "Balcones de Aztlán"
+        ],
+        "64217": [
+          "64217",
+          "Municipal (Popular Municipal)",
+          "PROVILEON San Bernabé",
+          "San Bernabé VIII (F-125)",
+          "Popular"
+        ],
+        "64218": [
+          "64218",
+          "Benito Juárez (Tiraderos de Basura)",
+          "Municipal Ampliación"
+        ],
+        "64219": [
+          "64219",
+          "Gloria Mendiola (Tierra Propia)",
+          "Felipe Zambrano"
+        ],
+        "64220": [
+          "64220",
+          "Lomas de San Martín",
+          "1 de Mayo (F-97)"
+        ],
+        "64225": [
+          "64225",
+          "5 de Mayo (F-93)"
+        ],
+        "64226": [
+          "64226",
+          "La Amistad"
+        ],
+        "64227": [
+          "64227",
+          "Villa San Ángel Topo Chico"
+        ],
+        "64228": [
+          "64228",
+          "Francisco Villa"
+        ],
+        "64229": [
+          "64229",
+          "Oscar Herrera Hosking",
+          "19 de Abril"
+        ],
+        "64230": [
+          "64230",
+          "San Ángel (F-78)"
+        ],
+        "64233": [
+          "64233",
+          "Fray Servando Teresa de Mier (F-6)"
+        ],
+        "64234": [
+          "64234",
+          "18 de Febrero"
+        ],
+        "64235": [
+          "64235",
+          "Las Pedreras",
+          "Salvador Allende",
+          "Unidad del Pueblo"
+        ],
+        "64236": [
+          "64236",
+          "Tierra y Libertad Sector Heróico"
+        ],
+        "64237": [
+          "64237",
+          "Fomerrey Sector Poniente",
+          "La Esperanza (Tierra Propia)"
+        ],
+        "64238": [
+          "64238",
+          "Predio Zapata"
+        ],
+        "64240": [
+          "64240",
+          "Los Dorados",
+          "21 de Marzo 2 Sector",
+          "Rafael Buelna",
+          "Francisco González Bocanegra",
+          "Moctezuma",
+          "Mártires de San Cosme"
+        ],
+        "64244": [
+          "64244",
+          "Tierra y Libertad Sector Sur"
+        ],
+        "64245": [
+          "64245",
+          "CNOP"
+        ],
+        "64246": [
+          "64246",
+          "Tierra y Libertad Sector Centro"
+        ],
+        "64247": [
+          "64247",
+          "Plan de San Luis"
+        ],
+        "64248": [
+          "64248",
+          "Madero"
+        ],
+        "64249": [
+          "64249",
+          "Tierra y Libertad Sector Norte",
+          "Unidad Reforma Urbana"
+        ],
+        "64250": [
+          "64250",
+          "Flores Magón 3 Sector",
+          "Ferrocarrilera",
+          "Valle del Topo Chico Sexto Sector",
+          "Josefa Ortiz de Domínguez",
+          "Loma Bonita",
+          "Pablo González",
+          "Unión Benito Garza Cantú",
+          "Residencial Aztlán"
+        ],
+        "64258": [
+          "64258",
+          "Carmen Serdán"
+        ],
+        "64259": [
+          "64259",
+          "Valle del Topo Chico"
+        ],
+        "64260": [
+          "64260",
+          "Héroe de Nacozari",
+          "Constituyentes del 57",
+          "INFONAVIT Hogares Ferrocarrileros",
+          "Nogales Topo Chico",
+          "Monterrey Conjunto Habitacional",
+          "Luis Echeverría (F-75)",
+          "Lomas de Anáhuac",
+          "Kennedy",
+          "Hogares Ferrocarrileros",
+          "Topo Chico"
+        ],
+        "64264": [
+          "64264",
+          "La Meseta"
+        ],
+        "64265": [
+          "64265",
+          "Unión Benito Juárez",
+          "Ávila Camacho",
+          "Cándido Díaz"
+        ],
+        "64266": [
+          "64266",
+          "Nueva Topo Chico",
+          "Belisario Domínguez"
+        ],
+        "64268": [
+          "64268",
+          "10 de Junio",
+          "4 de Diciembre",
+          "División del Norte",
+          "Unión Cuauhtémoc",
+          "Primero de Junio"
+        ],
+        "64269": [
+          "64269",
+          "Lázaro Cárdenas"
+        ],
+        "64270": [
+          "64270",
+          "Santa Fe Nor Poniente",
+          "San José",
+          "Plaza Insurgentes",
+          "Simón Bolívar"
+        ],
+        "64280": [
+          "64280",
+          "Pueblo Quieto",
+          "Niño Artillero",
+          "Narciso Mendoza",
+          "Bernardo Reyes"
+        ],
+        "64290": [
+          "64290",
+          "Regina",
+          "Hidalgo",
+          "Popular"
+        ],
+        "64299": [
+          "64299",
+          "Predio Estrella",
+          "AKRA",
+          "Industrial"
+        ],
+        "64300": [
+          "64300",
+          "Jardín de las Mitras",
+          "Valle de las Mitras"
+        ],
+        "64310": [
+          "64310",
+          "Premier Lincoln",
+          "Industrial Abraham Lincoln",
+          "Residencial Abraham Lincoln",
+          "Torres Lincoln"
+        ],
+        "64320": [
+          "64320",
+          "Mitras Norte"
+        ],
+        "64330": [
+          "64330",
+          "Francisco García Naranjo (INDECO)",
+          "San Jorge",
+          "Francisco García Naranjo (PROVILEON)"
+        ],
+        "64339": [
+          "64339",
+          "Valle Verde Tercer Sector"
+        ],
+        "64340": [
+          "64340",
+          "Privadas de Cumbres",
+          "Cumbres Elite Sector Villas",
+          "Hacienda Mitras"
+        ],
+        "64344": [
+          "64344",
+          "Pedregal Cumbres"
+        ],
+        "64345": [
+          "64345",
+          "Cumbres Elite Premier Privadas Alpes y Everest",
+          "Cumbres Elite Premier Privada Santa Helena",
+          "Cumbre Allegro"
+        ],
+        "64346": [
+          "64346",
+          "Cumbres Providencia",
+          "Cumbres Renacimiento",
+          "Cumbres Jade",
+          "Cumbres San Ángel",
+          "Real de Cumbres",
+          "Hacienda Santa Clara",
+          "Paseo de Cumbres",
+          "Privadas Cumbres Diamante",
+          "Cumbres Rodeo",
+          "Cumbres Platino",
+          "Cumbres Le Fontaine"
+        ],
+        "64347": [
+          "64347",
+          "Cumbres Oro Residencial",
+          "Cumbres Oro Sector Regency",
+          "Misión Cumbres 2 Sector",
+          "Valle de las Cumbres Primer Sector",
+          "Jardines de las Cumbres",
+          "Cumbres Quinta Real",
+          "Valle de las Cumbres Segundo Sector"
+        ],
+        "64348": [
+          "64348",
+          "Misión de las Cumbres",
+          "Portal de Cumbres",
+          "Mirador de las Mitras"
+        ],
+        "64349": [
+          "64349",
+          "Cumbres Madeira Francés",
+          "Gran Reserva Cumbres",
+          "Cima del Bosque",
+          "Cumbres las Palmas",
+          "Cumbres Madeira",
+          "Residencial Cumbres la Joya",
+          "Cumbres Gran Vía",
+          "Cumbres Elite Sector la Hacienda",
+          "Espacio Cumbres",
+          "Cumbres Elite",
+          "Cumbres del Sol",
+          "Cumbres San Agustín",
+          "Privadas Cumbres Elite",
+          "Cumbres Platinum",
+          "Cerradas de Cumbres",
+          "Cumbres Callejuelas",
+          "Cumbres Antares",
+          "Cumbres Santa Clara",
+          "Puerta de Hierro",
+          "Colonial Cumbres",
+          "Cima de la Montaña"
+        ],
+        "64350": [
+          "64350",
+          "Valle del INFONAVIT"
+        ],
+        "64360": [
+          "64360",
+          "Cumbres Campanario",
+          "Valle Verde Primer Sector",
+          "Villa Dorada"
+        ],
+        "64365": [
+          "64365",
+          "Patronato Cruz Verde"
+        ],
+        "64366": [
+          "64366",
+          "Cima de las Cumbres",
+          "Condocasas Cumbres",
+          "Cumbrescondido"
+        ],
+        "64367": [
+          "64367",
+          "Cumbres Sector la Esperanza",
+          "La Escondida Centro Urbano",
+          "La Esperanza"
+        ],
+        "64368": [
+          "64368",
+          "Rincón de las Cumbres"
+        ],
+        "64369": [
+          "64369",
+          "Valle de los Cedros"
+        ],
+        "64370": [
+          "64370",
+          "Los Altos",
+          "Los Cedros"
+        ],
+        "64380": [
+          "64380",
+          "Burócratas del Estado",
+          "Burócratas Federales"
+        ],
+        "64390": [
+          "64390",
+          "Emiliano Zapata",
+          "UH.Lázaro Cárdenas",
+          "Antonio I Villarreal"
+        ],
+        "64400": [
+          "64400",
+          "Estrella"
+        ],
+        "64410": [
+          "64410",
+          "Bella Vista",
+          "Del Prado"
+        ],
+        "64420": [
+          "64420",
+          "Garza Nieto",
+          "Pedro Lozano",
+          "Progreso",
+          "Benito Juárez"
+        ],
+        "64430": [
+          "64430",
+          "Urdiales"
+        ],
+        "64440": [
+          "64440",
+          "Industrial",
+          "Ferrocarrilero (Predio 21)"
+        ],
+        "64450": [
+          "64450",
+          "15 de Mayo (Larralde)"
+        ],
+        "64460": [
+          "64460",
+          "Mitras Centro",
+          "Tijerina"
+        ],
+        "64470": [
+          "64470",
+          "Obrerista"
+        ],
+        "64480": [
+          "64480",
+          "Talleres"
+        ],
+        "64488": [
+          "64488",
+          "10 de Marzo"
+        ],
+        "64489": [
+          "64489",
+          "Rubén Jaramillo"
+        ],
+        "64490": [
+          "64490",
+          "Sarabia"
+        ],
+        "64500": [
+          "64500",
+          "Del Norte"
+        ],
+        "64508": [
+          "64508",
+          "Residencial Vidriera"
+        ],
+        "64510": [
+          "64510",
+          "Mariano Escobedo",
+          "Coyoacán",
+          "Juana de Arco"
+        ],
+        "64517": [
+          "64517",
+          "Industrial Benito Juárez"
+        ],
+        "64520": [
+          "64520",
+          "Céntrika del Lago",
+          "Céntrika Crisoles",
+          "Céntrika Victoria Elite",
+          "Victoria",
+          "Vidriera",
+          "Cementos",
+          "Céntrika Victoria"
+        ],
+        "64530": [
+          "64530",
+          "Las Flores",
+          "Madero Norte",
+          "Moderna"
+        ],
+        "64536": [
+          "64536",
+          "Jardines de la Moderna"
+        ],
+        "64540": [
+          "64540",
+          "Villas de Linda Vista",
+          "Fontanares Churubusco Sur",
+          "Parque Industrial Regiomontano",
+          "Los Fresnos",
+          "Santa Fe"
+        ],
+        "64549": [
+          "64549",
+          "Industrias del Vidrio"
+        ],
+        "64550": [
+          "64550",
+          "Argentina",
+          "Fabriles",
+          "Asarco",
+          "Martínez",
+          "Cantú",
+          "Tampico",
+          "Privada Pinos",
+          "Reforma"
+        ],
+        "64560": [
+          "64560",
+          "Venustiano Carranza",
+          "Nueva Madero",
+          "Francisco I Madero"
+        ],
+        "64568": [
+          "64568",
+          "Almaguer"
+        ],
+        "64570": [
+          "64570",
+          "Treviño"
+        ],
+        "64580": [
+          "64580",
+          "Terminal",
+          "Modelo",
+          "Acero",
+          "Pablo A de la Garza"
+        ],
+        "64590": [
+          "64590",
+          "Agrícola",
+          "Fierro",
+          "Agrícola Acero",
+          "Churubusco",
+          "Álamos Corregidora"
+        ],
+        "64600": [
+          "64600",
+          "Leones"
+        ],
+        "64610": [
+          "64610",
+          "Las Cumbres"
+        ],
+        "64618": [
+          "64618",
+          "Llave de Oro"
+        ],
+        "64619": [
+          "64619",
+          "Residencial Cumbres",
+          "Colinas de las Cumbres",
+          "Cumbres Paraíso",
+          "Bosques de las Cumbres",
+          "Cumbres Mediterráneo"
+        ],
+        "64620": [
+          "64620",
+          "Vista Hermosa"
+        ],
+        "64623": [
+          "64623",
+          "Balcones de Galerías"
+        ],
+        "64630": [
+          "64630",
+          "La Escondida",
+          "Colinas de San Jerónimo",
+          "Villas de San Jerónimo",
+          "Rincón de San Jemo",
+          "San Jemo"
+        ],
+        "64632": [
+          "64632",
+          "Jardines de San Jerónimo"
+        ],
+        "64633": [
+          "64633",
+          "Rincón de las Colinas"
+        ],
+        "64634": [
+          "64634",
+          "Valle de San Jerónimo",
+          "Colonial San Jerónimo",
+          "Real de San Jerónimo",
+          "Colinas de San Jerónimo",
+          "Colinas de Liverpool",
+          "Prados de San Jerónimo",
+          "Lomas de San Jerónimo",
+          "Colonial San Francisco",
+          "La Vereda Privada Residencial",
+          "Villas de San Jerónimo"
+        ],
+        "64635": [
+          "64635",
+          "Colinas Diamante",
+          "Residencial San Jerónimo II"
+        ],
+        "64636": [
+          "64636",
+          "Misión de San Jerónimo"
+        ],
+        "64637": [
+          "64637",
+          "Rincón de San Jerónimo",
+          "Hacienda San Jerónimo"
+        ],
+        "64638": [
+          "64638",
+          "Cantera",
+          "Balcones de Colinas de San Jerónimo",
+          "Las Lajas",
+          "Colinas de San Gerardo"
+        ],
+        "64639": [
+          "64639",
+          "San Jemo Tercer Sector",
+          "Monteleón",
+          "Residencial las Colinas",
+          "Residencial Dinastía"
+        ],
+        "64640": [
+          "64640",
+          "San Jerónimo"
+        ],
+        "64649": [
+          "64649",
+          "Residencial Galerías"
+        ],
+        "64650": [
+          "64650",
+          "Santa María",
+          "Cumbres del Valle",
+          "Colinas del Valle",
+          "Rincón de Santa María",
+          "Cooperativa Cuauhtémoc"
+        ],
+        "64659": [
+          "64659",
+          "Sendero San Jerónimo"
+        ],
+        "64660": [
+          "64660",
+          "Miravalle",
+          "Rincón del Valle"
+        ],
+        "64700": [
+          "64700",
+          "Roma",
+          "Roma Sur",
+          "Nuevo Repueblo",
+          "Tecnológico"
+        ],
+        "64710": [
+          "64710",
+          "Nuevas Colonias",
+          "Comercial Ampliación Doctores",
+          "Los Doctores",
+          "Del Carmen",
+          "Pío X",
+          "El Maguey",
+          "Unión Francisco I Madero",
+          "Balcones del Carmen",
+          "Hacienda San Francisco",
+          "Loma Larga",
+          "Lomas de San Francisco"
+        ],
+        "64715": [
+          "64715",
+          "Los Magueyes",
+          "Loma Larga"
+        ],
+        "64718": [
+          "64718",
+          "Sertoma"
+        ],
+        "64720": [
+          "64720",
+          "Ancira",
+          "Benito Juárez (F-96)",
+          "Independencia",
+          "Unión Miguel Barrera",
+          "Centro"
+        ],
+        "64730": [
+          "64730",
+          "Tanque de Guadalupe",
+          "Alfonso Reyes",
+          "Heriberto Jara",
+          "Arturo B de la Garza",
+          "América Número Dos",
+          "La Pedrera"
+        ],
+        "64740": [
+          "64740",
+          "Roma Privada",
+          "Las Retamas",
+          "México",
+          "Arroyo Seco",
+          "Jardines Roma",
+          "Altavista Sur"
+        ],
+        "64750": [
+          "64750",
+          "Luis Echeverría Sur",
+          "Valle del Mirador",
+          "Haciendas de la Sierra",
+          "Altamira (Manz 20)",
+          "Las Canteras",
+          "Altamira"
+        ],
+        "64753": [
+          "64753",
+          "Las Privanzas Mallorca",
+          "Privanzas Quinto Sector",
+          "Los Ángeles Bosque Residencial",
+          "Alfareros"
+        ],
+        "64754": [
+          "64754",
+          "Jardín de las Torres"
+        ],
+        "64760": [
+          "64760",
+          "Cerro de la Campana",
+          "Desarrollo las Torres 91",
+          "15 de Septiembre",
+          "Unión el Rinconcito",
+          "Martínez Domínguez A Unión (La Campana)",
+          "Ruíz Cortines"
+        ],
+        "64764": [
+          "64764",
+          "Los Rosales",
+          "Valparaíso"
+        ],
+        "64765": [
+          "64765",
+          "Laderas del Mirador (F-XXI)",
+          "Antigua"
+        ],
+        "64769": [
+          "64769",
+          "Burócratas Municipales"
+        ],
+        "64770": [
+          "64770",
+          "Balcones de Altavista",
+          "Altavista Sector Lomas",
+          "Altavista Invernadero",
+          "Villa los Pinos"
+        ],
+        "64780": [
+          "64780",
+          "18 de Marzo",
+          "Sierra Ventana",
+          "13 de Junio",
+          "Las Brisas",
+          "Brisas Diamante",
+          "Las Brisas Sector la Punta",
+          "Más Palomas (Valle de Santiago)",
+          "Mártires de Tlatelolco"
+        ],
+        "64783": [
+          "64783",
+          "25 de Marzo (Sierra Ventana)"
+        ],
+        "64788": [
+          "64788",
+          "Sierra Ventana (Revolución Proletaria)"
+        ],
+        "64790": [
+          "64790",
+          "Torres Brisas",
+          "Valle de las Brisas",
+          "Valle del Marquez",
+          "Balcones del Mirador"
+        ],
+        "64798": [
+          "64798",
+          "Paseos del Marquez"
+        ],
+        "64800": [
+          "64800",
+          "Buenos Aires"
+        ],
+        "64810": [
+          "64810",
+          "Caracol",
+          "Residencial la Florida",
+          "Villa Florida",
+          "La Florida",
+          "Plaza Revolución",
+          "España",
+          "Cerro de la Silla"
+        ],
+        "64820": [
+          "64820",
+          "Ex Hacienda el Ancón",
+          "Residencial la Española",
+          "Valle del Huajuco",
+          "El Realito",
+          "Ancón del Huajuco",
+          "Jardín Español",
+          "Valle de Chapultepec",
+          "Nueva Española",
+          "Plaza Chapultepec"
+        ],
+        "64830": [
+          "64830",
+          "Estadio",
+          "LTH",
+          "Valle Primavera",
+          "Ladrillera",
+          "Narvarte",
+          "La Primavera"
+        ],
+        "64834": [
+          "64834",
+          "Rincón de la Primavera"
+        ],
+        "64836": [
+          "64836",
+          "Industrial y Comercial"
+        ],
+        "64840": [
+          "64840",
+          "Jardines de Altavista",
+          "Altavista",
+          "Nueva España"
+        ],
+        "64845": [
+          "64845",
+          "Contry Lux"
+        ],
+        "64850": [
+          "64850",
+          "Torremolinos",
+          "Contry Tesoro",
+          "Villa del Río"
+        ],
+        "64858": [
+          "64858",
+          "Contry los Naranjos",
+          "Balcones de Satélite"
+        ],
+        "64859": [
+          "64859",
+          "Contry San Juanito"
+        ],
+        "64860": [
+          "64860",
+          "Jardines del Contry",
+          "Contry los Estanques",
+          "Contry",
+          "Rincón del Contry",
+          "Colonial la Silla",
+          "El Pirul",
+          "Villas de Lux",
+          "Paseo del Contry"
+        ],
+        "64865": [
+          "64865",
+          "Contry los Nogales"
+        ],
+        "64878": [
+          "64878",
+          "Los Remates",
+          "San Ángel",
+          "Unión Canoas Ángel Sur"
+        ],
+        "64880": [
+          "64880",
+          "La Condesa"
+        ],
+        "64890": [
+          "64890",
+          "Privadas de la Silla",
+          "Altana",
+          "Privada Castaña",
+          "Lagos del Bosque",
+          "Cortijo del Río",
+          "Privadas del Sur",
+          "Cortijo del Río Tercer y Cuarto Sector",
+          "Villa las Fuentes",
+          "Residencial y Club de Golf la Herradura",
+          "Residencial la Hacienda",
+          "Estanza"
+        ],
+        "64893": [
+          "64893",
+          "Privadas del Pedregal"
+        ],
+        "64898": [
+          "64898",
+          "Residencial Vistalta",
+          "Pedregal de la Silla",
+          "Prados de la Silla",
+          "Privadas del Río",
+          "Villas de la Hacienda",
+          "Santa Sofia"
+        ],
+        "64899": [
+          "64899",
+          "Cortijo del Río Sector la Silla"
+        ],
+        "64900": [
+          "64900",
+          "Jardines del Paseo",
+          "Rincón del Paseo Segundo Sector",
+          "La República"
+        ],
+        "64909": [
+          "64909",
+          "Empleados SFEO",
+          "Lomas de Montecristo"
+        ],
+        "64910": [
+          "64910",
+          "Mirador Residencial"
+        ],
+        "64920": [
+          "64920",
+          "Del Paseo Residencial"
+        ],
+        "64925": [
+          "64925",
+          "Renacimiento",
+          "Lomas del Paseo",
+          "Privadas del Paseo",
+          "Sonoma Residencial"
+        ],
+        "64926": [
+          "64926",
+          "Privada Fundadores"
+        ],
+        "64930": [
+          "64930",
+          "Las Torres"
+        ],
+        "64940": [
+          "64940",
+          "Eduardo A Elizondo"
+        ],
+        "64949": [
+          "64949",
+          "Villa Sol"
+        ],
+        "64950": [
+          "64950",
+          "Mederos",
+          "Torres de Satélite"
+        ],
+        "64960": [
+          "64960",
+          "Ciudad Satélite"
+        ],
+        "64968": [
+          "64968",
+          "Satélite Miradores",
+          "Satélite Acueducto Sexto Sector",
+          "Colinas del Sur"
+        ],
+        "64969": [
+          "64969",
+          "Contry Sur",
+          "Lomas de Satélite"
+        ],
+        "64970": [
+          "64970",
+          "Campestre Mederos",
+          "Bosques de Satélite",
+          "Rincón Colonial Mederos"
+        ],
+        "64978": [
+          "64978",
+          "Privada Villa Alta Residencial",
+          "Lomas Mederos"
+        ],
+        "64979": [
+          "64979",
+          "Residencial Mederos",
+          "Bosquencinos",
+          "Cañadas del Sur",
+          "San Carlos Privada Residencial",
+          "Balcones de Mederos",
+          "Satélite Acueducto Séptimo Sector",
+          "El Encino",
+          "Valle de Bosquencinos"
+        ],
+        "64980": [
+          "64980",
+          "Manantiales del Diente",
+          "El Pinito"
+        ],
+        "64983": [
+          "64983",
+          "Ébanos",
+          "Antara",
+          "Palmares Residencial",
+          "Santa Lucía",
+          "Las Estancias",
+          "La Toscana",
+          "Rincón del Vergel"
+        ],
+        "64984": [
+          "64984",
+          "Residencial la Lágrima",
+          "Misión Canterías",
+          "Brisas de Valle Alto",
+          "Privada los Encinos",
+          "Vistancias",
+          "La Estanzuela Vieja",
+          "San Pablo",
+          "El Sabino Cerrada Residencial",
+          "Villas la Rioja",
+          "Villas de la Herradura",
+          "Cerradas de Valle Alto Residencial"
+        ],
+        "64985": [
+          "64985",
+          "La Joya Privada Residencial",
+          "Cerezos Residencial",
+          "Castaños del Vergel",
+          "Los Cristales",
+          "Sienna Residencial",
+          "Cantabria Residencial",
+          "Laderas Caranday",
+          "Pedregal de la Montaña",
+          "Villa Murano",
+          "El Uro Oriente",
+          "Villa Santa Isabel",
+          "Villa Toledo",
+          "Almendros de Laderas",
+          "Aires del Vergel",
+          "Laderas Abedul",
+          "Granadas"
+        ],
+        "64986": [
+          "64986",
+          "El Refugio",
+          "L Andana Residencial",
+          "Montealbán Residencial",
+          "Rancho la Bola",
+          "Privada Residencial Villas del Uro",
+          "El Uro",
+          "Soria"
+        ],
+        "64987": [
+          "64987",
+          "Encinos del Vergel",
+          "Bosques del Vergel",
+          "Catujanes",
+          "Privada la Herradura",
+          "El Encino",
+          "El Vergel",
+          "Las Diligencias"
+        ],
+        "64988": [
+          "64988",
+          "El Milagro",
+          "Las Callejas Residencial",
+          "Bosques de la Estanzuela",
+          "Estanzuela Nueva",
+          "El Encanto II",
+          "Paseo del Vergel",
+          "El Fortín del Huajuco",
+          "Lágrima de los Niños",
+          "Rincón de la Sierra",
+          "Ampliación los Nogales",
+          "Granja Postal",
+          "Rincón de la Escondida",
+          "La Rioja Privada Residencial",
+          "Los Santos",
+          "Bosques de la Silla",
+          "Residencial Amura",
+          "Misión Silla",
+          "Encino Real",
+          "Sierra Escondida",
+          "Residencial la Escondida",
+          "Lomas del Vergel",
+          "Ignacio Altamirano",
+          "Nogales de la Sierra",
+          "Privadas de la Fuente Residencial",
+          "Jardines de la Estanzuela",
+          "Nerea Residencial",
+          "La Alhambra",
+          "Residencial de la Sierra",
+          "La Estanzuela",
+          "Las Riveras",
+          "Paraíso Residencial",
+          "Colinas del Huajuco",
+          "Privada Villa Real",
+          "Privada del Vergel",
+          "La Perla",
+          "Unidad la Estanzuela",
+          "La Estanzuela (F-45)",
+          "El Encanto"
+        ],
+        "64989": [
+          "64989",
+          "Áurea Residencial",
+          "Hacienda Codornices",
+          "Lagos del Vergel",
+          "Residencial Canterías",
+          "San Gabriel",
+          "Villas de Canterías",
+          "Natura",
+          "San Michelle",
+          "Real de Valle Alto",
+          "El Portón de Valle Alto",
+          "Pedregal de Valle Alto",
+          "Balcones de Valle Alto",
+          "Portal de Valle Alto",
+          "Plaza Rincón de la Virgen",
+          "Los Azulejos",
+          "Plaza Rincón de la Sierra Alta",
+          "Rincón de las Montañas",
+          "Rincón de los Encinos",
+          "Sierra Alta",
+          "Las Jacarandas Privada Residencial",
+          "Flor de Piedra",
+          "Campestre Bugambilias",
+          "Valle Alto",
+          "Rincón de Valle Alto",
+          "Lomas de Valle Alto",
+          "Portal del Huajuco",
+          "Privada Valle Alto",
+          "Lomas del Hípico",
+          "Bosques de Valle Alto",
+          "Maestranzas Villas de Providencia",
+          "Hacienda los Encinos",
+          "Bioma Residencial",
+          "Valle del Vergel",
+          "Los Milagros de Valle Alto",
+          "Rincón de los Ahuehuetes"
+        ],
+        "64990": [
+          "64990",
+          "El Mirador",
+          "Las Jaras",
+          "Campestre Sertoma",
+          "Las Margaritas",
+          "Santa Isabel",
+          "Los Cristales Campestre",
+          "Valle de Cristal",
+          "Antigua Hacienda Santa Anita",
+          "Canterel",
+          "Campestre los Cristales"
+        ],
+        "64996": [
+          "64996",
+          "Carolco",
+          "El Edén"
+        ],
+        "64997": [
+          "64997",
+          "Moretta",
+          "Montellán",
+          "El Barro",
+          "Campestre el Barrio",
+          "Mítica Residencial",
+          "Villas Moretta"
+        ],
+        "NECOGIO_TIENDITA": [
+          "tienda",
+          "abarrotes"
+        ],
+        "NECOGIO_ROPA": [
+          "tienda de ropa",
+          "ropa",
+          "boutique",
+          "boutique de ropa"
+        ],
+        "NEGOCIO_TECNOLOGIA": [
+          "tienda de electrónicos",
+          "tienda de computación"
+        ],
+        "NEGOCIO_RESTAURANTE": [
+          "cafetería",
+          "café",
+          "restaurante"
+        ],
+        "NEGOCIO_PAPELERIA": [
+          "papelería"
+        ],
+        "NEGOCIO_GIMNASIO": [
+          "gimnasio"
+        ],
+        "NEGOCIO_ESTETICA": [
+          "estética",
+          "barbería"
+        ]
+      }
+    }
